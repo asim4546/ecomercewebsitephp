@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+html,body{
+    font-family: 'Playfair Display', serif;
+    display: grid;
+    background-color: #4e2804;
+    align-content: center;
+    min-height: 100vh;
+    height: 100%;
+}
+.navbar-brand {
+	    color: rgba(255, 192, 167, 0.932);
+        font-size: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 70vh;
+    width: 95vw;
+    margin: 0 auto;
+}
+.image{
+    background: url("./2.jpg") center/cover no-repeat;
+}
+.content{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.content h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+}
+.content span{
+    height: 0.5px;
+    width: 100px;
+    background: #777;
+    margin: 20px 0;
+}
+.content p{
+    top: 60px;
+    padding-bottom: 15px;
+    font-weight: 100;
+    opacity: 0.7;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.vertical-line{
+    height: 30px;
+    width: 0.5px;
+    background: #777;
+    margin: 0 auto;
+}
+.icons{
+    display: flex;
+    padding: 15px 0;
+}
+.icons li{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+.icons li i{
+    font-size: 26px;
+    opacity: 0.8;
+}
+.icons li i:hover{
+    color: #4e2804;
+}
+.button {
+  background-color :#4e2804;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover{
+    background-color: #f59f7d;
+}
+
+/*****************/
+
+@media(max-width: 992px){
+    .navbar-brand{
+        font-size: 15px;
+        top:10px;
+        left:15px; 
+    }
+    section{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .image{
+        height: 100vh;
+    }
+    .content{
+        height: 100vh;
+    }
+    .content h2{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .content span{
+        margin: 20px 0;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    
+}
+        </style>
+    </head>
+    <body>
+        
+        <section>
+            <div class = "image">
+                
+            </div>
+
+            <div class = "content">
+                <h2>About Us</h2>
+               
+
+                <p><!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>About Our Shoe Brand</title>
+                        <style>
+                            body {
+                                font-family: Arial, sans-serif;
+                                background-color: #f4f4f4;
+                                margin: 0;
+                                padding: 0;
+                            }
+                    
+                          
+                    
+                            .container {
+                                max-width: 800px;
+                                margin: 20px auto;
+                                background-color: #fff;
+                                padding: 20px;
+                                border: 1px solid #ddd;
+                                border-radius: 5px;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                            }
+                    
+                            h1 {
+                                color: #050505;
+                                background-color: #327eae;
+                                color: white;
+                                text-align: center;
+                                padding: 1em 0;
+                            }
+                    
+                            p {
+                                color: #555;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        
+                            <h1>About Our Shoe Brand</h1>
+                        <div class="container">
+                            <h2>Our Story</h2>
+                            <p>At 'Starlet', we are passionate about creating high-quality shoes that combine comfort and style. Founded in [Year], we've been dedicated to offering customers footwear that reflects their unique personality and supports their daily activities.
+                                <br>
+                                <img src="story.jpeg" alt="">
+                            </p>
+                    
+                            <h2>Our Mission</h2>
+                            <p>Our mission is to provide shoes that not only look great but also offer the best in terms of comfort and durability. We believe that everyone deserves to walk with confidence and that the right pair of shoes can make all the difference.
+                                <br>
+                                <img src="mission.jpeg" alt="">
+                            </p>
+                    
+                            <h2>Our Values</h2>
+                            <p>We are committed to ethical and sustainable practices in everything we do. From sourcing materials to manufacturing, we prioritize quality, environmental responsibility, and fair labor practices.
+                                <img src="values.jpeg" alt="">
+                            </p>
+                    
+                            <h2>Contact Us</h2>
+                            <p>If you have any questions or feedback, please don't hesitate to reach out to us. We're here to assist you.
+                                <img src="social.png" alt="">
+                            </p>
+                        </div>
+                    </body>
+                    </html>
+                    </p>
+
+                <a href="./product.html" class="button">Let's Shop</a>
+
+            </div>
+        </section>
+        
+    </body>
+</html>

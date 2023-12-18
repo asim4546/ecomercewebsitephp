@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    background-color: rgb(98, 76, 206);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-img {
+    width: 40px; /* Adjust the size as needed */
+    margin-right: 10px; /* Add margin for spacing */
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; /* Add some space between logo and menu on mobile */
+  }
+
+  .menu li {
+    margin: 10px;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  .menu a:hover {
+    color: #1177ca;
+  }
+
+  .fa {
+    margin-right: 5px;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .footer {
+    background-color: rgb(98, 76, 206);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-section {
+    flex: 4;
+    padding: 20px;
+  }
+
+  .footer-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-icons li {
+    margin: 0 10px;
+  }
+
+  .social-icons a {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .contact-form button {
+    background-color: #1177ca;
+    color: #fff;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .copyright {
+    text-align: center;
+    background-color: rgb(98, 76, 206);
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .follow-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 10px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+
+    .menu.show {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .menu li {
+      margin: 10px 0;
+    }
+
+    .menu a {
+      font-size: 18px;
+    }
+
+    .menu a:hover {
+      color: #1f1f20;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+
+    .logo-container img {
+      width: 60px;
+      height: auto;
+    }
+
+    .social-icons li {
+      margin: 0 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="container">
+    <div class="logo-container">
+      <img src="logo.jpeg" alt="Company Logo" class="logo-img">
+      <div class="logo">CompanyLogo</div>
+    </div>
+    <ul class="menu">
+      <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
+      <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+      <li><a href="#"><i class="fa fa-cog"></i> Service</a></li>
+      <li><a href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+      <li><a href="#"><i class="fa fa-user"></i> Account</a></li>
+      <li><a href="#"><i class="fa fa-sign-out"></i> Logout</a></li>
+    </ul>
+    <i class="fa fa-bars menu-toggle"></i>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="footer-section follow-us">
+      <h3 class="footer-title">Follow Us:</h3>
+      <ul class="social-icons">
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-linkedin"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-section">
+      <h3 class="footer-title">Contact Us</h3>
+      <form class="contact-form">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
+      </form>
+    </div>
+  </div>
+  <div class="copyright">
+    &copy; 2023 Haseeb Ali. All rights reserved.
+  </div>
+</div>
+
+<script>
+// JavaScript to toggle the menu on small screens
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("show");
+});
+</script>
+
+</body>
+</html>
